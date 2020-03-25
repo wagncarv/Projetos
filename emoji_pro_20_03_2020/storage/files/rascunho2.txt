@@ -1,0 +1,184 @@
+
+        :root{
+          --xpos: 0px;
+          --ypos: 0px;
+        }  
+
+        .container{
+            width: 400px;
+        }
+
+        #icon
+        {
+            display: none;
+        }
+
+        .image{
+            background: url('89.webp');
+            background-position-x: var(--xpos);
+            background-position-y: var(--ypos);
+            width: 35px;
+            height: 35px;
+        }
+
+        .container div{
+            display: block;
+            float: left;
+        }
+
+
+
+////////////////////////////
+
+window.onload = function(){
+
+    var container = document.querySelector('.container');
+
+    var xpos = -4;
+    var ypos = -3;
+    var img = new Image();
+    img.src = '89.webp';
+
+    var imgWidth = img.naturalWidth;
+    var imgHeight = img.naturalHeight;
+
+    var hsize = -(imgWidth - (-2 * xpos));
+    var vsize = -(imgHeight - (-2 * ypos));
+
+    var tableElement = document.createElement('table');
+
+    while(xpos > hsize && ypos > vsize){
+        var cont = imgWidth;
+        //var trElement = document.createElement('tr');
+        // var tdElement = document.createElement('td');
+        // var divElement = document.createElement('div');
+        // divElement.style.backgroundPosition = xpos + "px " + ypos + "px"; 
+        // divElement.classList.add("image");
+
+        // tdElement.appendChild(divElement);
+
+        while (cont > 40){
+            var tdElement = document.createElement('td');
+            var divElement = document.createElement('div');
+            divElement.style.backgroundPosition = xpos + "px " + ypos + "px"; 
+            divElement.classList.add("image");
+    
+            tdElement.appendChild(divElement);
+    
+            var trElement = document.createElement('tr');
+            trElement.appendChild(tdElement);
+            tableElement.appendChild(trElement);
+            cont -= 40;
+            xpos -= (40 - (2 ^1/2));
+        }
+        //trElement.appendChild(tdElement);
+        
+        //tableElement.appendChild(trElement);
+
+        //xpos -= (40 - (2 ^1/2));
+        //xpos -= 40;
+        divElement.style.margin = 4;
+
+        if (xpos <= hsize && ypos > vsize ){
+            xpos = -4;
+            ypos -= 36;
+            divElement.style.margin = 4;
+            cont = imgWidth;
+        }
+   
+    }
+
+    container.appendChild(tableElement);
+
+}
+  
+
+  ////////////////////////////// BOM /////////////////////
+
+  window.onload = function(){
+
+    var container = document.querySelector('.container');
+
+    var xpos = -2;
+    var ypos = -2;
+    var img = new Image();
+    img.src = '89.webp';
+
+    var imgWidth = img.naturalWidth;
+    var imgHeight = img.naturalHeight;
+
+    var hsize = -(imgWidth - (-2 * xpos));
+    var vsize = -(imgHeight - (-2 * ypos));
+
+
+    while(xpos >= hsize && ypos >= vsize){
+        var divElement = document.createElement('div');
+        divElement.style.backgroundPosition = xpos + "px " + ypos + "px"; 
+        divElement.classList.add("image");
+        container.appendChild(divElement);
+
+        xpos -= 40;
+
+        if (xpos <= hsize && ypos >= vsize ){
+            xpos = -4;
+            ypos -= 36;
+
+        }
+  
+    }
+}
+
+///////////////// RAZOÁVEL ///////////
+
+var container = document.querySelector('.container');
+
+    var img = new Image();
+    img.src = '89.webp';
+
+    var imgWidth = img.naturalWidth;
+    var imgHeight = img.naturalHeight;
+
+    var xpos = -2;
+    var ypos = -1;
+
+    var hsize = -imgWidth;
+    var vsize = -imgHeight;
+
+    createImage(xpos, ypos, hsize, vsize);
+
+    function createImage(xpos, ypos, hsize, vsize){
+        while(xpos > hsize && ypos > vsize){
+            var divElement = document.createElement('div');
+            divElement.style.backgroundPosition = xpos + "px " + ypos + "px"; 
+            divElement.classList.add("image");
+            container.appendChild(divElement);
+    
+            xpos -= 39;
+    
+            if (xpos < hsize && ypos > vsize ){
+                xpos = -2;
+                ypos -= 40;
+    
+            }
+      
+        }
+    }
+  
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+    
