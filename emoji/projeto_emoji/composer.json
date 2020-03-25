@@ -1,0 +1,31 @@
+{
+  "name": "conta_no_github/nome_do_projeto",
+  "description": "Descrição do projeto",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "nome do autor",
+      "email": "mail@mail.com",
+      "homepage": "https://www.homepage.com.br",
+      "role": "Desenvolvedor"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": [
+      "source/Boot/Config.php",
+      "source/Boot/emoji_functions.php",
+      "source/Boot/io_functions.php",
+      "source/Boot/sprite_gen.php"
+
+    ]
+  },
+  "require": {
+
+  }
+}
