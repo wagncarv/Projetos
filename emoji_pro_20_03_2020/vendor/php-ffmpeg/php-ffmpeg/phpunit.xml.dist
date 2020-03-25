@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+<<<<<<< HEAD
+<<<<<<< HEAD
+         verbose="false"
+         bootstrap="tests/bootstrap.php"
+>
+    <php>
+        <env name="SYMFONY_PHPUNIT_REMOVE_RETURN_TYPEHINT" value="true"/>
+    </php>
+
+=======
+=======
+>>>>>>> 0b5c0cc434ab2f3892947f2eff12e6e6eafae9fb
+         syntaxCheck="true"
+         verbose="false"
+         bootstrap="tests/bootstrap.php"
+>
+<<<<<<< HEAD
+>>>>>>> 0b5c0cc434ab2f3892947f2eff12e6e6eafae9fb
+=======
+>>>>>>> 0b5c0cc434ab2f3892947f2eff12e6e6eafae9fb
+    <testsuites>
+        <testsuite name="unit">
+            <directory>tests/Unit</directory>
+        </testsuite>
+        <testsuite name="functional">
+            <directory>tests/Functional</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src/</directory>
+        </whitelist>
+=======
+=======
+>>>>>>> 0b5c0cc434ab2f3892947f2eff12e6e6eafae9fb
+      <blacklist>
+        <directory>vendor</directory>
+        <directory>tests</directory>
+      </blacklist>
+<<<<<<< HEAD
+>>>>>>> 0b5c0cc434ab2f3892947f2eff12e6e6eafae9fb
+=======
+>>>>>>> 0b5c0cc434ab2f3892947f2eff12e6e6eafae9fb
+    </filter>
+</phpunit>
+

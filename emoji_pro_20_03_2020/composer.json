@@ -1,0 +1,40 @@
+{
+    "name": "lucianopezzin/teste_wagner",
+    "description": "Project that uses composer as basis for converting emojis to various formats, such as UTF-8, Unicode.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "wagner carvalho",
+            "email": "wagncarv@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "emgag/video-thumbnail-sprite": "^1.0"
+    },
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+            "Source\\": "source/"
+        },
+        "files": [
+            "source/Boot/Config.php",
+            "source/Boot/emoji_functions.php",
+            "source/Boot/io_functions.php",
+            "source/Boot/sprite_gen.php"
+        ]
+=======
+            "App\\": "app/"
+        }
+>>>>>>> 0b5c0cc434ab2f3892947f2eff12e6e6eafae9fb
+=======
+            "App\\": "app/"
+        }
+>>>>>>> 0b5c0cc434ab2f3892947f2eff12e6e6eafae9fb
+    }
+}
