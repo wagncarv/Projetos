@@ -1,0 +1,43 @@
+{
+  "name": "alertrack/emoji",
+  "description": "emoji converter",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Wagner Carvalho",
+      "email": "wagncarv@mail.com",
+      "homepage": "https://www.alertrack.com.br",
+      "role": "Desenvolvedor"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": [
+      "source/Boot/Config.php",
+      "source/Boot/emoji_functions.php",
+      "source/Boot/io_functions.php",
+      "source/Boot/save_canvas.php",
+      "source/Boot/save_sprite.php"
+
+    ]
+  },
+  "require": {
+    "joypixels/emoji-toolkit": "^5.5",
+    "vlucas/phpdotenv": "4.0",
+    "ext-gd": "*",
+    "ext-json": "*",
+    "ext-mbstring": "*",
+    "ext-iconv": "*",
+    "ext-dom": "*",
+    "emojione/emojione": "^4.5",
+    "coffeecode/uploader": "1.0.*",
+    "voku/simple_html_dom": "^4.7"
+ 
+  }
+
+}

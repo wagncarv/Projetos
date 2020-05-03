@@ -1,0 +1,443 @@
+[
+    {
+        "name": "coffeecode/uploader",
+        "version": "1.0.8",
+        "version_normalized": "1.0.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/robsonvleite/uploader.git",
+            "reference": "0a85f2d44115741e5e978c2430d8d9997fd44be7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/robsonvleite/uploader/zipball/0a85f2d44115741e5e978c2430d8d9997fd44be7",
+            "reference": "0a85f2d44115741e5e978c2430d8d9997fd44be7",
+            "shasum": ""
+        },
+        "require": {
+            "ext-exif": "*",
+            "ext-gd": "*",
+            "ext-mbstring": "*",
+            "php": "^7.2"
+        },
+        "time": "2019-10-29T13:47:46+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "CoffeeCode\\Uploader\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Robson V. Leite",
+                "email": "cursos@upinside.com.br",
+                "role": "Developer"
+            },
+            {
+                "name": "Tiago Chini",
+                "email": "tiago.chini@hotmail.com",
+                "role": "collaborator"
+            }
+        ],
+        "description": "It is a easy PHP upload manager for images, files and media in your application",
+        "homepage": "http://www.upinside.com.br",
+        "keywords": [
+            "Coffeecode",
+            "Image upload",
+            "file upload",
+            "media upload",
+            "upinside",
+            "upload"
+        ]
+    },
+    {
+        "name": "emojione/emojione",
+        "version": "4.5.0",
+        "version_normalized": "4.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/emojione/emojione.git",
+            "reference": "79e685356877cbb6128074a71b7f88f435b58412"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/emojione/emojione/zipball/79e685356877cbb6128074a71b7f88f435b58412",
+            "reference": "79e685356877cbb6128074a71b7f88f435b58412",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.6 || ~5.0"
+        },
+        "time": "2019-02-15T01:32:20+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Emojione\\": "lib/php/src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "(CC-BY-4.0 and MIT)"
+        ],
+        "description": "EmojiOne is a complete set of emojis designed for the web. It includes libraries to easily convert unicode characters to shortnames (:smile:) and shortnames to our custom emoji images. PNG format provided for the emoji images.",
+        "homepage": "http://www.emojione.com",
+        "keywords": [
+            "emoji",
+            "emojione",
+            "emojis",
+            "emoticons",
+            "smileys",
+            "smilies",
+            "unicode"
+        ],
+        "abandoned": true
+    },
+    {
+        "name": "joypixels/emoji-toolkit",
+        "version": "5.5.0",
+        "version_normalized": "5.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/joypixels/emoji-toolkit.git",
+            "reference": "e8a567ebcc1688525d109434c08256eaeb9a2306"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/joypixels/emoji-toolkit/zipball/e8a567ebcc1688525d109434c08256eaeb9a2306",
+            "reference": "e8a567ebcc1688525d109434c08256eaeb9a2306",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.6 || ~5.0"
+        },
+        "time": "2020-02-12T21:14:22+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "JoyPixels\\": "lib/php/src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "(CC-BY-4.0 and MIT)"
+        ],
+        "description": "JoyPixels is a complete set of emoji designed for the web. The emoji-toolkit includes libraries to easily convert unicode characters to shortnames (:smile:) and shortnames to JoyPixels emoji images. PNG formats provided for the emoji images.",
+        "homepage": "http://www.joypixels.com",
+        "keywords": [
+            "JoyPixels",
+            "emoji",
+            "emoji-toolkit",
+            "emojione",
+            "emojis",
+            "emoticons",
+            "smileys",
+            "smilies",
+            "unicode"
+        ]
+    },
+    {
+        "name": "phpoption/phpoption",
+        "version": "1.7.3",
+        "version_normalized": "1.7.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/schmittjoh/php-option.git",
+            "reference": "4acfd6a4b33a509d8c88f50e5222f734b6aeebae"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/4acfd6a4b33a509d8c88f50e5222f734b6aeebae",
+            "reference": "4acfd6a4b33a509d8c88f50e5222f734b6aeebae",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.5.9 || ^7.0 || ^8.0"
+        },
+        "require-dev": {
+            "bamarni/composer-bin-plugin": "^1.3",
+            "phpunit/phpunit": "^4.8.35 || ^5.0 || ^6.0 || ^7.0"
+        },
+        "time": "2020-03-21T18:07:53+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.7-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PhpOption\\": "src/PhpOption/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Apache-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Johannes M. Schmitt",
+                "email": "schmittjoh@gmail.com"
+            },
+            {
+                "name": "Graham Campbell",
+                "email": "graham@alt-three.com"
+            }
+        ],
+        "description": "Option Type for PHP",
+        "keywords": [
+            "language",
+            "option",
+            "php",
+            "type"
+        ]
+    },
+    {
+        "name": "symfony/css-selector",
+        "version": "v5.0.7",
+        "version_normalized": "5.0.7.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/css-selector.git",
+            "reference": "5f8d5271303dad260692ba73dfa21777d38e124e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/css-selector/zipball/5f8d5271303dad260692ba73dfa21777d38e124e",
+            "reference": "5f8d5271303dad260692ba73dfa21777d38e124e",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.2.5"
+        },
+        "time": "2020-03-27T16:56:45+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "5.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\CssSelector\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Jean-François Simon",
+                "email": "jeanfrancois.simon@sensiolabs.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony CssSelector Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/polyfill-ctype",
+        "version": "v1.15.0",
+        "version_normalized": "1.15.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/polyfill-ctype.git",
+            "reference": "4719fa9c18b0464d399f1a63bf624b42b6fa8d14"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/4719fa9c18b0464d399f1a63bf624b42b6fa8d14",
+            "reference": "4719fa9c18b0464d399f1a63bf624b42b6fa8d14",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "suggest": {
+            "ext-ctype": "For best performance"
+        },
+        "time": "2020-02-27T09:26:54+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.15-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Polyfill\\Ctype\\": ""
+            },
+            "files": [
+                "bootstrap.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Gert de Pagter",
+                "email": "BackEndTea@gmail.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony polyfill for ctype functions",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "compatibility",
+            "ctype",
+            "polyfill",
+            "portable"
+        ]
+    },
+    {
+        "name": "vlucas/phpdotenv",
+        "version": "v4.0.0",
+        "version_normalized": "4.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/vlucas/phpdotenv.git",
+            "reference": "3aa2821b7f117e235af45ef057e41112a25bf9b1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/3aa2821b7f117e235af45ef057e41112a25bf9b1",
+            "reference": "3aa2821b7f117e235af45ef057e41112a25bf9b1",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.5.9 || ^7.0",
+            "phpoption/phpoption": "^1.6",
+            "symfony/polyfill-ctype": "^1.9"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8.35 || ^5.0 || ^6.0 || ^7.0"
+        },
+        "time": "2019-11-30T20:25:09+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Dotenv\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Graham Campbell",
+                "email": "graham@alt-three.com",
+                "homepage": "https://gjcampbell.co.uk/"
+            },
+            {
+                "name": "Vance Lucas",
+                "email": "vance@vancelucas.com",
+                "homepage": "https://vancelucas.com/"
+            }
+        ],
+        "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
+        "keywords": [
+            "dotenv",
+            "env",
+            "environment"
+        ]
+    },
+    {
+        "name": "voku/simple_html_dom",
+        "version": "4.7.17",
+        "version_normalized": "4.7.17.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/voku/simple_html_dom.git",
+            "reference": "804aca422f1fe0104b1320ca09fd06cd0062782c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/voku/simple_html_dom/zipball/804aca422f1fe0104b1320ca09fd06cd0062782c",
+            "reference": "804aca422f1fe0104b1320ca09fd06cd0062782c",
+            "shasum": ""
+        },
+        "require": {
+            "ext-dom": "*",
+            "ext-libxml": "*",
+            "ext-simplexml": "*",
+            "php": ">=7.0.0",
+            "symfony/css-selector": "~3.0 || ~4.0 || ~5.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~6.0 || ~7.0"
+        },
+        "suggest": {
+            "voku/portable-utf8": "If you need e.g. UTF-8 fixed output."
+        },
+        "time": "2020-04-09T21:20:43+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "voku\\helper\\": "src/voku/helper/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "dimabdc",
+                "email": "support@titor.ru",
+                "homepage": "http://github.com/dimabdc",
+                "role": "Developer"
+            },
+            {
+                "name": "Lars Moelleken",
+                "homepage": "http://www.moelleken.org/",
+                "role": "Developer"
+            }
+        ],
+        "description": "Simple HTML DOM package.",
+        "homepage": "http://simplehtmldom.sourceforge.net/",
+        "keywords": [
+            "HTML Parser",
+            "dom",
+            "php dom"
+        ]
+    }
+]

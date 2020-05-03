@@ -1,0 +1,46 @@
+:root{
+    --xpos: 2;
+    --ypos: 0;
+}  
+
+.container{
+    width: 600px;
+    margin: 0 auto;
+}
+
+#icon
+{
+    display: none;
+}
+
+.image{
+    background: url('89.webp');
+    background-position-x: var(--xpos);
+    background-position-y: var(--ypos);
+    width: 38px;
+    height: 35px;
+}
+
+
+.container div{
+    display: inline-block;
+    /*float: left;*/
+} 
+
+input[type=submit]{
+    font-family: 'Roboto', sans-serif;
+    background-color: #1bcf6c;
+    color: #ffffff;
+    border-radius: 2px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+input[type=submit]:hover{
+    background-color: #159e52;
+}
+
+
+
+
+

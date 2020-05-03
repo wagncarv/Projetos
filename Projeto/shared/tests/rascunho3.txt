@@ -1,0 +1,87 @@
+//Variáveis
+var canvas = document.querySelector('#canvas');
+var ctx = canvas.getContext("2d");
+ctx.font = `20px Arial`;
+ctx.padding = '0px';
+var icons = [];
+
+document.querySelector('#fileToUpload').onchange = function(){
+    var file = this.files[0];
+  
+    var reader = new FileReader();
+    reader.onload = function(progressEvent){
+
+      // por linhas
+      var contY = 20;
+      var lines = this.result.split('\n');
+      for(var line = 0; line < lines.length; line++){
+        //icons.push(lines[line].replace(/\"/g, ""));
+        //ctx.fillText(text,x,y);
+        //if (inArray(lines[line], lines)){continue;}
+        ctx.fillText(lines[line].replace(/\"/g, ""), line, contY);
+        contY+= 20;
+      }
+    };
+    reader.readAsText(file);
+  };
+
+  /**
+   * 
+   */
+  function inArray(needle, haystack) {
+    var length = haystack.length;
+    for(var i = 0; i < length; i++) {
+        if(haystack[i] == needle) return true;
+    }
+    return false;
+}
+
+/**
+ * Função responsável por criar as imagens e enviá-las para
+ * armazenamento em arquivo.
+ */
+
+var marginLeft = 0;
+var count = 0;
+var countY = 0;
+
+function loadEmojis() {
+        ctx.font = `20px Arial`;
+        ctx.padding = '0px';
+        //ctx.fillText(text,x,y);
+        //ctx.fillText("😄", count, countY);
+        ctx.fillText("🗿", 0, 20);
+        //marginLeft += icons[count];
+        count++;
+        countY++;
+
+        if (count < icons.length) {
+            loadEmojis();
+        } 
+       else {
+            //Envia imagem para gravação, arquivo save_canvas.php
+            var image = canvas.toDataURL("text/html", 1);
+            var ajax = new XMLHttpRequest();
+            var suffix = `XYxXY-${getDate()}`;
+            ajax.open("POST", `source/Boot/save_canvas.php?suffix=${suffix}`, true);
+            ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            ajax.send("image=" + image);
+
+            ajax.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    console.log(this.responseText);
+                }
+            };
+        }
+    }
+
+
+
+function getDate(){
+    let d = new Date();
+    return `${d.getFullYear()}-${d.getMonth()}-${d.getDate()}-${d.getHours()}-${d.getMinutes()}-${d.getSeconds()}`;
+}
+
+loadEmojis();
+
+
