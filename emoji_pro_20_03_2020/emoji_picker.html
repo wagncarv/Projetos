@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Emoji Picker</title>
+    <link rel="stylesheet" type="text/css" href="shared/styles/emoji_picker.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Emoji Picker</h1>
+      <input data-emoji-picker="true" type="text" value="">
+      <input data-emoji-picker="true" type="text" value="">
+      <textarea data-emoji-picker="true"></textarea>  
+    </div>
+  </body>
+  <script src="shared/scripts/emoji_picker.js"></script>
+  <script>
+    (() => {
+      new EmojiPicker()
+    })()
+  </script>
+</html>
